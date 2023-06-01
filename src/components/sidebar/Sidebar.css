@@ -1,0 +1,29 @@
+.sidebar {
+  width: 200px;
+  background-color: #f0f3f5;
+  transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 60px;
+}
+
+.toggle {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.nav-link:hover {
+  background-color: #e9ecef;
+}
