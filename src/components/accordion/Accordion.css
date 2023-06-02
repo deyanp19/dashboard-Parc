@@ -1,0 +1,19 @@
+
+#accordionPayarc {
+    font-family: "Qucksang","sans-sarif";
+     
+    
+}
+
+ .accordion-header button {
+    font-family: "Qucksang","sans-sarif";
+    font-weight: 700;
+    color:purple;
+}
+
+svg {
+    size: 40px;
+    border-radius: 6px;
+    background-color: white;
+
+}
