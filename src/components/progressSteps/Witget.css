@@ -19,7 +19,7 @@
     position: absolute;
     left: -48px;
     background-color: hsl(217, 88.2%, 90%);
-    color: rgb(72, 134, 233);
+    color: rgba(72, 134, 233,0.6);
     border-radius: 50%;
     height: 31px;
     width: 31px;
