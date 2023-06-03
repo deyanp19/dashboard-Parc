@@ -1,95 +1,48 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Accordion from "@/components/accordion/Accordion";
+import Card from "@/components/card/Card";
+import Clock from "@/components/clock/Clock";
+import Jumbotron from "@/components/jumbotron/Jumbotron";
+import Witget from "@/components/progressSteps/Witget";
+import Sidebar from "@/components/sidebar/Sidebar";
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+
+export default function Dashboard() {
+    const text=`We are technology-driven company built for business. We know the challenges of starting and managing a business, so we embarked on a journey to provide smart and simple payment processing tools and products. dolorum voluptatem esse nesciunt ea ullam cupiditate incidunt! Alias ea dolore eius, odio molestias qui sint dolorem!
+    
+    We are dedicated to empowering businesses to improve thier organization - on e payment at a time. 
+    `
+    const title="Payarc Overview";
+    const image="/images/Payarc-logo-tilted.png";
+
+  const cardData=[
+    {title:"Payarc Terminals",text:"Ever wondering about those mysterious NABA fees on your statement?"},{title:"Payarc + Curv",text:"Ever wondering about those mysterious NABA fees on your statement?"},{title:"Payarc Banks",text:"Ever wondering about those mysterious NABA fees on your statement?"}
+  ]
+
+
+    return(
+       <div className="container-fluid">
+
+         <div className="row gx-1">
+           <div className="col-3">
+            <Sidebar name="Jhon Doe" />
+            
+           </div>
+           <div className="col-9">
+
+              <Clock />
+              <Jumbotron title={title} text={text} image={image}/>
+              <div className="row d-flex justify-content-between">
+
+              {cardData.map(x=><div className="col-4 mt-5"> <Card title={x.title} text={x.text}/></div>)}
+
+              </div>
+           </div>
+          
+
+         </div>
+
+       
+        {/* <Witget /> */}
         </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    );
 }

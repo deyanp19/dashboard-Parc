@@ -7,8 +7,11 @@ import Sidebar from "@/components/sidebar/Sidebar";
 
 
 export default function Dashboard() {
-    const text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam in quasi ipsum eveniet, dolorum voluptatem esse nesciunt ea ullam cupiditate incidunt! Alias ea dolore eius, odio molestias qui sint dolorem!"
-    const title="Jumbotron Example";
+    const text=`We are technology-driven company built for business. We know the challenges of starting and managing a business, so we embarked on a journey to provide smart and simple payment processing tools and products. dolorum voluptatem esse nesciunt ea ullam cupiditate incidunt! Alias ea dolore eius, odio molestias qui sint dolorem!
+    
+    We are dedicated to empowering businesses to improve thier organization - on e payment at a time. 
+    `
+    const title="Payarc Overview";
     const image="/images/Payarc-logo-tilted.png";
 
   const cardData=[
@@ -17,14 +20,29 @@ export default function Dashboard() {
 
 
     return(
-       <div>
-         {/* <Sidebar name="Jhon Doe" />
-          <Accordion /> */}
-        {/* <Jumbotron title={title} text={text} image={image}/> */}
-        {/* {cardData.map(x=><Card title={x.title} text={x.text}/>)} */}
+       <div className="container-fluid">
 
-        <Clock/>
-        <Witget />
+         <div className="row gx-1">
+           <div className="col-3">
+            <Sidebar name="Jhon Doe" />
+            
+           </div>
+           <div className="col-9">
+
+              <Clock />
+              <Jumbotron title={title} text={text} image={image}/>
+              <div className="row d-flex justify-content-between">
+
+              {cardData.map(x=><div className="col-4 mt-5"> <Card title={x.title} text={x.text}/></div>)}
+
+              </div>
+           </div>
+          
+
+         </div>
+
+       
+        {/* <Witget /> */}
         </div>
     );
 }

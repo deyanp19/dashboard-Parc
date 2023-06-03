@@ -21,8 +21,8 @@ export default function Witget({step}) {
     return (
         <div className="container-widget shadow rounded">
 
-        <section class="py-5 m-5">
-            <i class="fa-solid fa-1" ></i>
+        <section class="py-5 m-4 ps-3">
+             
           <ul class="timeline-with-icons">
             <li class="timeline-item mb-5 ">
               <span class="timeline-icon bg-white">

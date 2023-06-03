@@ -6,7 +6,7 @@ export default function Jumbotron({image,title,text}){
            
             <div className="row justify-content-start ">
                 <div className="col-3 ">
-                        <img style={{"width":"20vw"}} src={image}  alt="Payarc Logo tilted" />
+                        <img style={{"width":"10vw"}} src={image}  alt="Payarc Logo tilted" />
                 </div>
                 <div className="col-9">
                     <h1 style={{"font-weight":"700","fontFamily":"Quicksand"}}>{title}</h1>

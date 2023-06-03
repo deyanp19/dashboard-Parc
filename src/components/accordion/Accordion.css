@@ -10,9 +10,9 @@
 .title-accordion {
     font-weight: 700;
 }
-svg {
+div svg {
  
-    margin: 0px !important;;
+    margin: 0px;
 }
 .icon-easel {
     margin-right:1rem;

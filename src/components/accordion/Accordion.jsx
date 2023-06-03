@@ -7,10 +7,10 @@ export default function Accordion() {
 </svg>
 
     return (
-        <div className="accordion" id="accordionPayarc">
-            <div className="accordion-item">
+        <div className="accordion mt-5" id="accordionPayarc">
+            <div className="accordion-item mt-3 rounded shadow border-0">
                     <h2 className="accordion-header">
-                        <button className="accordion-button  gy-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button className="accordion-button rounded gy-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div>  
                         <div>
@@ -26,9 +26,9 @@ export default function Accordion() {
                         </div>
                     </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item mt-3 rounded shadow border-0">
                 <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button className="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div> 
                         <div>
@@ -44,9 +44,9 @@ export default function Accordion() {
                     </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item mt-3 rounded shadow border-0">
                 <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button className="accordion-button collapsed rounded" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div> 
                         <div className="title-desctiption">
@@ -62,9 +62,9 @@ export default function Accordion() {
                     </div>
                 </div>
             </div>
-            <div className="accordion-item">
+            <div className="accordion-item mt-3 mb-5 rounded shadow border-0">
                 <h2 className="accordion-header">
-                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button className="accordion-button collapsed shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div>  
                         <div>
