@@ -17,7 +17,7 @@ export default function Training() {
 
                 <Sidebar name="Jhon Doe" />
                 </div>
-                <div className="col">
+                <div className="col-9">
                     <Clock />
                     <div className="row">
 
