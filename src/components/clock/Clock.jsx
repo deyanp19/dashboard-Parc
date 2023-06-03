@@ -6,7 +6,7 @@ export default function Clock() {
         <div className="clock d-flex flex-column  align-items-end">
             
             <ClockUse
-            format={'h:mm:ss A'}
+            format={'h:mm A'}
             
             ticking={true} />
             <div className="weekday">
