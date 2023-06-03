@@ -2,6 +2,7 @@ import Accordion from "@/components/accordion/Accordion";
 import Card from "@/components/card/Card";
 import Clock from "@/components/clock/Clock";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
+import Witget from "@/components/progressSteps/Witget";
 import Sidebar from "@/components/sidebar/Sidebar";
 
 
@@ -20,9 +21,10 @@ export default function Dashboard() {
          {/* <Sidebar name="Jhon Doe" />
           <Accordion /> */}
         {/* <Jumbotron title={title} text={text} image={image}/> */}
-        {cardData.map(x=><Card title={x.title} text={x.text}/>)}
+        {/* {cardData.map(x=><Card title={x.title} text={x.text}/>)} */}
 
         <Clock/>
+        <Witget />
         </div>
     );
 }
