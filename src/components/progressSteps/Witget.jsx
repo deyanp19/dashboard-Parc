@@ -19,8 +19,9 @@ export default function Witget({step}) {
   {/* <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/> */}
 </svg>
     return (
-        
-        <section class="py-5 m-5 ">
+        <div className="container-widget shadow rounded">
+
+        <section class="py-5 m-5">
             <i class="fa-solid fa-1" ></i>
           <ul class="timeline-with-icons">
             <li class="timeline-item mb-5 ">
@@ -63,6 +64,7 @@ export default function Witget({step}) {
             </li>
           </ul>
         </section>
+        </div>
       
     );
 }
