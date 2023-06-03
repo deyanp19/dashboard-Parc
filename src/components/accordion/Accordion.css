@@ -1,19 +1,21 @@
 
-#accordionPayarc {
-    font-family: "Qucksang","sans-sarif";
-     
-    
-}
+ 
 
  .accordion-header button {
-    font-family: "Qucksang","sans-sarif";
-    font-weight: 700;
+     
+    font-family: 'Quicksand', sans-serif;
+     
     color:purple;
 }
-
+.title-accordion {
+    font-weight: 700;
+}
 svg {
-    size: 40px;
-    border-radius: 6px;
-    background-color: white;
-
+ 
+    margin: 0px !important;;
+}
+.icon-easel {
+    margin-right:1rem;
+    margin-bottom:1rem !important;
+     
 }
