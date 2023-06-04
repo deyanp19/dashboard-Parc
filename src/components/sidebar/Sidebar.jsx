@@ -37,7 +37,7 @@ const grid=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="
 const searchIcon=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" className="bi bi-search" viewBox="0 0 16 16">
 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
 </svg>
-const calendar=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
+const calendar=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" className="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
 </svg>
 const Sidebar=({name})=>{

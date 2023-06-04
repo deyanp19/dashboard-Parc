@@ -3,6 +3,7 @@ import Clock from "@/components/clock/Clock";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Witget from "@/components/progressSteps/Witget";
 import Sidebar from "@/components/sidebar/Sidebar";
+import SidebarSubmenu from "@/components/sidebar/SidebarSubmenu";
 
 export default function Training() {
     const text=" In tierd pricing, each credit card transaction falls into a pricing category: qualified, mid-qualified, and non -qualified. Qaalified reates are the lowest and you might think that most of your credit card transaction s fall into the qualified category. Not so! Downgrades can occur for several reasons, including, but not limited to :"
@@ -15,7 +16,7 @@ export default function Training() {
 
                 <div className="col-3">
 
-                <Sidebar name="Jhon Doe" />
+                <SidebarSubmenu name="Jhon Doe" />
                 </div>
                 <div className="col-9">
                     <Clock />

@@ -4,6 +4,7 @@ import Clock from "@/components/clock/Clock";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Witget from "@/components/progressSteps/Witget";
 import Sidebar from "@/components/sidebar/Sidebar";
+import SidebarSubmenu from "@/components/sidebar/SidebarSubmenu";
 
 
 export default function Dashboard() {
@@ -24,7 +25,7 @@ export default function Dashboard() {
 
          <div className="row gx-1">
            <div className="col-3">
-            <Sidebar name="Jhon Doe" />
+            <SidebarSubmenu name="Jhon Doe" />
             
            </div>
            <div className="col-9">

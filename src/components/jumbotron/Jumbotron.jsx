@@ -9,8 +9,8 @@ export default function Jumbotron({image,title,text}){
                         <img style={{"width":"10vw"}} src={image}  alt="Payarc Logo tilted" />
                 </div>
                 <div className="col-9">
-                    <h1 style={{"font-weight":"700","fontFamily":"Quicksand"}}>{title}</h1>
-                    <p style={{"font-weight":"300","fontFamily":"Quicksand"}}>{text}</p>
+                    <h1 style={{"fontWeight":"700","fontFamily":"Quicksand"}}>{title}</h1>
+                    <p style={{"fontWeight":"300","fontFamily":"Quicksand"}}>{text}</p>
                 </div>
                 
             </div>
