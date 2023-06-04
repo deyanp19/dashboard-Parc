@@ -64,7 +64,7 @@ export default function Accordion() {
             </div>
             <div className="accordion-item mt-3 mb-5 rounded shadow border-0">
                 <h2 className="accordion-header">
-                    <button className="accordion-button collapsed shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button className="accordion-button collapsed shadow" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div>  
                         <div>
@@ -76,7 +76,7 @@ export default function Accordion() {
                         </div>
                     </button>
                 </h2>
-                <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
                         <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
