@@ -1,8 +1,10 @@
  
 import {useState} from 'react';
 import { FaHome, FaUser, FaCog } from 'react-icons/fa';
-import style from './Sidebar.css';
+import styles from './SidebarSubmenu.css';
 import Link from 'next/link'
+import Accordion from '../accordion/Accordion';
+import AccordionSidebar from './AccordionSidebar';
 
 const leftArrow=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="violet" className="bi bi-caret-left" viewBox="0 0 16 16">
   <path d="M10 12.796V3.204L4.519 8 10 12.796zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753z"/>
@@ -40,13 +42,18 @@ const searchIcon=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
 const calendar=<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="grey" class="bi bi-calendar2-check-fill" viewBox="0 0 16 16">
 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zm9.954 3H2.545c-.3 0-.545.224-.545.5v1c0 .276.244.5.545.5h10.91c.3 0 .545-.224.545-.5v-1c0-.276-.244-.5-.546-.5zm-2.6 5.854a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
 </svg>
-const Sidebar=({name})=>{
+const SidebarSubmenu=({name})=>{
 
     const [collapsed, setCollapsed] = useState(false);
+    const [subCollapsed,setSubCollapsed]= useState(false);
 
     const toggleSidebar = () => {
         setCollapsed(!collapsed);
     };
+
+    const toggleSubmenu=()=>{
+      setSubCollapsed(!subCollapsed);
+    }
   
     return (
       <div className={`sidebar ${collapsed ? 'collapsed' : ''}   shadow-sm p-3 mb-5 bg-body-tertiary rounded`}>
@@ -63,43 +70,63 @@ const Sidebar=({name})=>{
               </Link>
             </li>
             <li className= "nav-item" >
-              <a className={style["nav-link"]} href="#">
+              <a className= "  nav-accordion-flex"  href="#">
                 {link}
-                {!collapsed && <span>My Payarc</span>}
+                {!collapsed && <div className="accordion nav-item-accordion" id="accordionPayarc">
+                  <div className="accordion-item border-0 nav-item-accordion-background">
+                    <h2 className="accordion-header">
+                      <button className="accordion-button collapsed  gy-4 nav-padding-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                          
+                      <div>
+
+                      <p className="title-accordion text-primary mb-0" >My Payarc</p>
+                      
+                      </div>
+                      </button>
+                    </h2>
+                    <div id="collapseZero" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div className="accordion-body  border-start border-primary nav-accordion-body">
+                         
+                             <AccordionSidebar />
+                          
+                    </div>
+                </div>
+                  </div>
+                </div>}
               </a>
             </li>
             <li className= "nav-item" >
-              <a className={style["nav-link"]} href="#">
+              <a className={styles["nav-link"]} href="#">
                {payarcIcon}
                 {!collapsed && <span>About Payarc</span>}
               </a>
             </li>
             <li className="nav-item">
-              <Link className={style["nav-link"]} href="/training">
+              <Link className={styles["nav-link"]} href="/training">
                 {easel3}
                 {!collapsed && <span>Payarc Training</span>}
               </Link>
             </li>
             <li className="nav-item">
-              <a className={style["nav-link"]} href="#">
+              <a className={styles["nav-link"]} href="#">
               {calendar}
                 {!collapsed && <span>Induustry Training</span>}
               </a>
             </li>
             <li className="nav-item">
-              <a className={style["nav-link"]} href="#">
+              <a className={styles["nav-link"]} href="#">
               {downloadIcon}
                 {!collapsed && <span>Marketing Materials</span>}
               </a>
             </li> 
             <li className="nav-item">
-              <a className={style["nav-link"]} href="#">
+              <a className={styles["nav-link"]} href="#">
                 {textIcon}
                 {!collapsed && <span>Marketing Request Forms</span>}
               </a>
             </li>
             <li className="nav-item">
-              <a className={style["nav-link"]} href="#">
+              <a className={styles["nav-link"]} href="#">
                 {tools}
                 {!collapsed && <span>Access to tools</span>}
               </a>
@@ -128,4 +155,4 @@ const Sidebar=({name})=>{
     )    
 }
 
-export default Sidebar;
+export default SidebarSubmenu;

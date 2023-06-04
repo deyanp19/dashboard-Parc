@@ -24,7 +24,7 @@ export default function Dashboard() {
 
          <div className="row gx-1">
            <div className="col-3">
-            <Sidebar name="Jhon Doe" />
+            <SidebarSubmenu name="Jhon Doe" />
             
            </div>
            <div className="col-9">

@@ -10,7 +10,7 @@ export default function Accordion() {
         <div className="accordion mt-5" id="accordionPayarc">
             <div className="accordion-item mt-3 rounded shadow border-0">
                     <h2 className="accordion-header">
-                        <button className="accordion-button rounded gy-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button className="accordion-button rounded  " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                             <div className="icon-easel shadow p-3 mb-5 bg-white rounded text-primary">{easel3}
                             </div>  
                         <div>
