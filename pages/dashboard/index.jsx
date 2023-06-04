@@ -34,7 +34,9 @@ export default function Dashboard() {
               <Jumbotron title={title} text={text} image={image}/>
               <div className="row d-flex justify-content-between">
 
-              {cardData.map(x=><div className="col-4 mt-5"> <Card title={x.title} text={x.text}/></div>)}
+              {cardData.map((x,i)=><div className="col-4 mt-5" key={x.title.charAt()+i}> 
+              {console.log(x.title.charAt()+i)}
+              <Card title={x.title} text={x.text}/></div>)}
 
               </div>
            </div>

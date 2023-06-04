@@ -1,5 +1,5 @@
 import style from './AccordionSidebar.css';
-import Link from 'next/link';
+import div from 'next/link';
 
 
 export default function AccordionSidebar({menuSubItems=["Overview","Apply App","My Residuals","My Merchants","Resources"],subitems}){
@@ -29,7 +29,7 @@ export default function AccordionSidebar({menuSubItems=["Overview","Apply App","
             </h2>
             <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body nav-item-accordion-background">
-                    <Link href="#">Submenu </Link> 
+                    <div href="#">Submenu </div> 
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ export default function AccordionSidebar({menuSubItems=["Overview","Apply App","
             <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div className="accordion-body nav-item-accordion-background">
                      
-                    <Link href="#">Submenu</Link>  
+                    <div href="#">Submenu</div>  
 
                      
                 </div>
@@ -68,11 +68,11 @@ export default function AccordionSidebar({menuSubItems=["Overview","Apply App","
                   <div className="accordion-body nav-item-accordion-background">  
                 <ul className="border-start border-primary nav-accordion-body list-unstyled font-weight-light">
                     <li >
-                        <Link href="#" >Resources</Link>
+                        <div href="#" >Resources</div>
 
                     </li>
                     <li>
-                        <Link href="#" >API Keys</Link>
+                        <div href="#" >API Keys</div>
 
                     </li>
                 </ul>

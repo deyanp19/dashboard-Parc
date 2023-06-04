@@ -75,7 +75,7 @@ const SidebarSubmenu=({name})=>{
                 {!collapsed && <div className="accordion nav-item-accordion" id="accordionPayarc">
                   <div className="accordion-item border-0 nav-item-accordion-background">
                     <h2 className="accordion-header">
-                      <button className="accordion-button collapsed  gy-4 nav-padding-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
+                      <button className="accordion-button accordion-button-nav collapsed  gy-4 nav-padding-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseZero" aria-expanded="true" aria-controls="collapseZero">
                           
                       <div>
 
