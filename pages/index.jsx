@@ -9,7 +9,7 @@ export default function Index() {
 	return (
 		<div >
 			 <Sidebar name="J D"/>
-			 <Jumbotron />
+			 
 			  
 		</div>
 	);
