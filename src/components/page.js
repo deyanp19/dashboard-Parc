@@ -4,6 +4,7 @@ import Clock from "@/components/clock/Clock";
 import Jumbotron from "@/components/jumbotron/Jumbotron";
 import Witget from "@/components/progressSteps/Witget";
 import Sidebar from "@/components/sidebar/Sidebar";
+import SidebarSubmenu from "./sidebar/SidebarSubmenu";
 
 
 export default function Dashboard() {
@@ -33,7 +34,7 @@ export default function Dashboard() {
               <Jumbotron title={title} text={text} image={image}/>
               <div className="row d-flex justify-content-between">
 
-              {cardData.map(x=><div className="col-4 mt-5"> <Card title={x.title} text={x.text}/></div>)}
+              {cardData.map((x,i)=><div className="col-4 mt-5" key={x.title.charAt()+i}><Card title={x.title} text={x.text}/></div>)}
 
               </div>
            </div>
