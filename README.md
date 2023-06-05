@@ -1,6 +1,6 @@
 <img src="./public/images/Presentation.png"
      alt="Screenshot of Payarc Dashboard"
-     style="float: left; margin-right: 10px;" height="320px" width="240px" />
+     style="float: left; margin-right: 10px;" height="240px" width="320px" />
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
