@@ -33,7 +33,7 @@ To learn more about Next.js, take a look at the following resources:
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
 ## Deployed Version on Vercel
-for desctops  not optimized for mobile
+Suitable for desktops;  not optimized for mobile
 
 
 https://dashboard-parc-kain.vercel.app/training
